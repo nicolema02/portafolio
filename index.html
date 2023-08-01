@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  <link rel="stylesheet" href="normalize.css"> -->
+    <!-- Se me ocurrio usar esto por probar al final, pero si lo normalizo se rompe el formulario y me dio pereza jeje -->
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="#" class="logo">
+                    <h1 class="titulo">Portafolio <span>Nicolas Lema</span></h1>
+                </a>
+                <nav id="nav">
+                    <a href="#titulo-proyectos">Mis Proyectos</a>
+                    <a href="#">Mis habilidades</a>
+                    <a href="#tit-form">Contactos</a>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="cont-port">
+        <img src="img/portada.jpg" class="portada">
+    </div>
+
+
+
+    <section class="mis-habilidades">
+        <h2 class="tit-hab">Mis habilidades</h2>
+        <div class="cont-escrituras">
+            <div class="escrituras habilidad-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript"
+                    width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff8300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M7.5 8h3v8l-2 -1" />
+                    <path
+                        d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                </svg>
+                <p>
+                    Poseo conocimientos básicos en Java Script, pero aun así me desenvuelvo bien con el lenguaje.
+                </p>
+
+
+            </div>
+
+            <div class="escrituras habilidad-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="100"
+                    height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff8300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                </svg>
+                <p class="">Poseo un nivel básico en HTML, aunque el mismo se expande con cada proyecto que creo ya que
+                    indago mucho.
+                </p>
+            </div>
+            <div class="escrituras habilidad-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="100"
+                    height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff8300" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                </svg>
+                <p class="">Poseo un nivel de Css aceptable aunque me falta mucho por aprender, pero tengo bastante
+                    creatividad.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <h2 id="titulo-proyectos">Mis Proyectos</h2>
+    <section>
+
+        <div class="proyectos">
+            <div class="fotitos">
+                <a target="_blank" href="img/gatito1.jpg">
+                    <img src="img/gatito1.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="descripcion">Gatito very facha</div>
+            </div>
+
+            <div class="fotitos">
+                <a target="_blank" href="img/gatito2.jpg">
+                    <img src="img/gatito2.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="descripcion">Gatito very facha</div>
+            </div>
+
+            <div class="fotitos">
+                <a target="_blank" href="img/gatito3.jpeg">
+                    <img src="img/gatito3.jpeg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="descripcion">Gatito very facha</div>
+            </div>
+
+            <div class="fotitos">
+                <a target="_blank" href="img/gatito4.jpg">
+                    <img src="img/gatito4.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="descripcion">Gatito very facha</div>
+            </div>
+        </div>
+    </section>
+
+
+    <h2 id="tit-form">Contacto</h2>
+
+
+    <section class="cont-form">
+        <div class="bloque">
+            <div class="txt">
+                <label ">Nombre</label>
+                <input type=" text" placeholder="Ingrese su nombre" class="input">
+            </div>
+            <div class="txt">
+                <label ">Apellido</label>
+                <input type=" text" placeholder="Ingrese su apellido" class="input">
+            </div>
+            <div class="txt">
+                <label>Tema</label>
+                <input type="text" placeholder="Ingrese un tema referente" class="input">
+            </div>
+            <div class="txt">
+                <label>Mensaje</label>
+                <textarea id="" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="btn">
+        </div>
+        </form>
+    </section>
+
+
+
+    <footer class="cont-footer">
+
+        <div id="redes">
+            <a href="https://instagram.com/lema_nicolas?igshid=NGExMmI2YTkyZg==" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40"
+                    height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+            </a>
+            <a href="https://twitter.com/cosasdegatosweb?lang=es" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="40"
+                    height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg>
+            </a>
+            <a href="https://mail.google.com/mail?hl=es" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-gmail" width="40"
+                    height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
+                    <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />
+                    <path d="M16 4l-4 4l-4 -4" />
+                    <path d="M4 6.5l8 7.5l8 -7.5" />
+                </svg>
+            </a>
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>

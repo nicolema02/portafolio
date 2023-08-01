@@ -1,0 +1,275 @@
+:root {
+    --fondo: rgb(188, 188, 188);
+    --negro: rgb(23, 23, 23);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: 'Krub', sans-serif;
+    background-color: var(--fondo);
+}
+
+/* ------------------------------------------------Navegación superior------------------------------------------------------*/
+.header {
+    background-color: var(--negro);
+    width: 100%;
+    padding: 1.2rem;
+    position: fixed;
+
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 120rem;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    font-size: 4.2rem;
+    color: var(--fondo);
+}
+
+.titulo span {
+    font-size: 1.5rem;
+}
+
+.navegacion {
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    gap: 3.2rem;
+    color: var(--fondo);
+    font-size: 15px;
+
+}
+
+#nav a {
+    padding: .8rem;
+    transition: .5s;
+    text-decoration: none;
+    color: var(--fondo);
+}
+
+#nav a:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(1.04);
+    border-radius: 1rem;
+    background-color: rgb(18, 118, 151);
+
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --------------------------------------------------Fin de la navegación------------------------------------------------- */
+
+/* --------------------------------------------------Portada--------------------------------------------- */
+.cont-port{
+    display: flex;
+  background-color: var(--negro);
+  padding-top: 21rem;
+
+ 
+}
+.portada{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: .60px .60px 5px 5px rgb(123, 123, 123);
+    
+}
+/* ----------------------------------------------fin Portada--------------------------------------------- */
+
+/* -----------------------------------------------------mis habilidades------------------------------------ */
+.tit-hab{
+    font-size: 4rem;
+    padding-top: 10.5rem;
+    text-align: center;
+    color: var(--fondo);
+}
+.habilidad-icon{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mis-habilidades {
+    width: 100%;
+    height: 45rem;
+    background-color: var(--negro);
+
+
+}
+
+.cont-escrituras {
+    text-align: center;
+    display: flex;
+    gap: 4rem;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.escrituras {
+    display:flex;
+    padding-top: 4rem;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+/* -------------------------------proyectos--------------------------------- */
+
+@media (min-width: 768px){ /* Iba a intentar resposive mirando videos pero me dio pereza */
+
+    #titulo-proyectos {
+        text-align: center;
+        font-size: 4rem;
+        padding-bottom: 5rem;
+        padding-top: 10rem;
+    }
+    
+    .proyectos {
+        display: flex;
+        justify-content: center
+    }
+    
+    div.fotitos {
+        margin: 15px;
+        border-radius: 3rem;
+        box-shadow: 0.5px 0.5px 3px 3px rgb(108, 108, 108);
+        float: left;
+        width: auto;
+    
+    
+    }
+    
+    div.fotitos:hover {
+        transform: scale(1.06);
+    }
+    
+    div.fotitos img {
+        max-width: 20rem;
+        max-height: 20rem;
+        transition: .8s;
+        border-radius: 3rem;
+    }
+    
+    div.descripcion {
+        padding: 15px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+}
+
+
+
+
+/* --------------------------------------------------Formulario de contacto----------------------------------------------- */
+#tit-form {
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 5rem;
+    padding-top: 30rem;
+}
+
+.cont-form {
+    border-radius: 1.5rem;
+    width: min(60rem, 100%);
+    padding: 3rem;
+    display: flex;
+    background-color: rgb(128, 128, 128);
+    width: 30rem;
+    height: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0.5px 1px 6px 6px rgb(117, 117, 117);
+    background-image: url(img/background.jpg);
+    margin-bottom: 10rem;
+}
+
+.txt label {
+    color: var(--fondo);
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.input {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--fondo);
+}
+
+.txt textarea {
+    height: 15rem;
+    resize: none;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--fondo);
+    padding: .3rem;
+}
+
+.txt {
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(71, 71, 159);
+    font-size: 1.5rem;
+    color: var(--fondo);
+    transition: .5s;
+
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+/* -------------------------------------------------Fin del formulario contacto------------------------------------------------------ */
+
+/* -------------------------------------------------footer--------------------------------------------- */
+.cont-footer {
+    display: flex;
+    background-color: var(--negro);
+}
+
+#redes {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------------------------------------------Fin del footer-------------------------------------------------- */
